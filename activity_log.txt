@@ -1,0 +1,17 @@
+# For February 2025
+for i in {1..28}; do  
+    export GIT_COMMITTER_DATE="2025-02-${i} 12:00:00"  
+    export GIT_AUTHOR_DATE="2025-02-${i} 12:00:00"  
+    echo "Update log for February ${i}" >> activity_log.txt  
+    git add activity_log.txt  
+    git commit -m "Daily update for February ${i}" --date="2025-02-${i} 12:00:00"  
+done
+
+# For March 2025
+for i in {1..31}; do  
+    export GIT_COMMITTER_DATE="2025-03-${i} 12:00:00"  
+    export GIT_AUTHOR_DATE="2025-03-${i} 12:00:00"  
+    echo "Update log for March ${i}" >> activity_log.txt  
+    git add activity_log.txt  
+    git commit -m "Daily update for March ${i}" --date="2025-03-${i} 12:00:00"  
+doneUpdate log 30
